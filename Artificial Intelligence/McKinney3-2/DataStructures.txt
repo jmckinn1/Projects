@@ -1,0 +1,10 @@
+Nueral network:
+	Neuron[][]	arcs
+	double[][]	weight
+	double		threshold
+	double		learningRate
+	
+Neuron
+	double		activation	
+
+	

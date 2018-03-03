@@ -1,0 +1,11 @@
+SUM OF DISTANCE OUT OF PLACE:
+
+	    int sumOfDistanceOutOfPlace = 0;
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                sumOfDistanceOutOfPlace += Math.abs(((board[i][j] - 1)%board.length) - j);//difference in column
+                sumOfDistanceOutOfPlace += Math.abs(((board[i][j])/board.length) - i);//difference in row
+            }//End inner GetHeuristicScore for loop
+        }//End outer GetHeuristicScore for loop
+        return sumOfDistanceOutOfPlace;
+    }//End GetHeuristicScore method

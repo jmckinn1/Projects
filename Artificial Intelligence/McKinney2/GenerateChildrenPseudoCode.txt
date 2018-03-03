@@ -1,0 +1,25 @@
+GenerateChildren:
+
+	currentBoard = OPEN.dequeue
+
+        if(NullTile != northEdge)
+		MoveTile(currentBoard, North)
+
+	if(NullTile != southEdge)
+		MoveTile(currentBoard, South)
+
+	if(NullTile != eastEdge)
+		MoveTile(currentBoard, East)
+
+	if(NullTile != westEdge)
+		MoveTile(currentBoard, West)
+
+	
+	CLOSED.enqueue(currentBoard)
+
+MoveTile(currentBoard, tileToBecomeNull)
+
+	new Puzzle childBoard = currentBoard.DeepCopy
+	oldNullTile = tileToBecomeNull
+	tileToBecomeNull = null
+	depth++

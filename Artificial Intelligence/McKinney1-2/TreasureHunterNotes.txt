@@ -1,0 +1,11 @@
+location class:
+
+boolean	visited;
+int	locationName;
+int	treasure;
+int[]	path
+
+discover location(n, t);
+visited = false;
+locationName = n;
+treasure = t;

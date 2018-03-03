@@ -1,0 +1,7 @@
+3
+cat
+heart
+poison
+llama
+mouse
+hand
